@@ -1,0 +1,166 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+  }
+  
+  .container {
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 20px 0;
+  }
+  
+  .logo {
+    width: 40px;
+  }
+  
+  ul li {
+    display: inline-block;
+  }
+  
+  ul li a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  .content .text {
+    width: 40%;
+    color: white;
+  }
+  
+  .content .text h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+  }
+  
+  .content .text p {
+    font-size: 18px;
+    margin: 20px 0;
+  }
+  
+  .content .text a {
+    text-decoration: none;
+    background: #fff;
+    color: black;
+    padding: 8px 15px;
+    border-radius: 20px;
+  }
+  
+  .content .images {
+    width: 30%;
+  }
+  
+  .content .images img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+  }
+  
+  .icons {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .icons img {
+    width: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+  .icons img:hover {
+    transform: scale(1.2);
+  }
+  
+  /* Media Query for Responsive Design */
+  @media (max-width: 1200px) {
+    .content .text {
+      width: 50%;
+    }
+  
+    .content .images {
+      width: 25%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .content .text {
+      width: 60%;
+    }
+  
+    .content .images {
+      width: 20%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .content {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content .text {
+      width: 80%;
+      text-align: center;
+    }
+  
+    .content .images {
+      width: 60%;
+      margin-top: 20px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    header {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  
+    ul li {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .content .text {
+      width: 100%;
+      font-size: 20px;
+    }
+  
+    .content .images {
+      width: 80%;
+    }
+  
+    .icons {
+      position: static;
+      transform: none;
+      margin-top: 20px;
+    }
+  
+    .icons img {
+      width: 40px;
+      margin: 0 5px;
+    }
+  }
+  
